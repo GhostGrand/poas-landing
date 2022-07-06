@@ -156,6 +156,9 @@ body {
 }
 
 .page__services {
+    position: relative;
+    z-index: 2;
+    margin: -110px 0px 0px 0px;
 }
 /* -------FOOTER------------------------------------------------------------------- */
 .footer {
@@ -201,7 +204,7 @@ body {
 }
 
 .main-block__text {
-    font-size: 32px;
+    font-size: 27px;
     line-height: (39 / 32 * 100%);
     font-weight: 300;
     color: white;
@@ -245,7 +248,16 @@ body {
 
 .main-block__button_border {
     border: 0.7px solid white;
+    transition: ease-in-out 0.3s;
 }
+
+/* @media (min-width:479px) {
+    .main-block__button_border:hover {
+        color: rgb(118, 121, 255);
+        background-color: #404E87;
+            border: 0.7px solid #404E87;
+    }
+} */
 
 .main-block__image {
     position: absolute;
@@ -259,7 +271,7 @@ body {
     object-position: bottom;
 } 
 
-/* ---------------------------------------- */
+/* ----SERVICES-------------------------------- */
 
 .services {
 }
@@ -267,21 +279,44 @@ body {
 }
 
 .services__body {
-    display: flex;
-    margin: 0px -15px;
+    
 }
+
+@media (min-width: 720px) {
+    .services__body{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -15px -30px;
+    }
+}
+
+
 .services_column {
     padding: 0px 15px;
     flex: 0 1 33.333%;
+    margin: 0px 0px 30px 0px;
 }
+
+@media (min-width: 720px) {
+    .services__body {
+        padding: 0px 15px;
+    }
+}
+
+@media (max-width: 700px) {
+    .services_column {
+       flex: 0 1 50%; 
+    }
 .services_item {
+    height: 100%;
     box-shadow: 0px 180px 50px rgba(0, 0, 0, 0.01), 0px 115px 46px rgba(0, 0, 0, 0.04), 0px 65px 39px rgba(0, 0, 0, 0.15), 0px 29px 29px rgba(0, 0, 0, 0.26), 0px 7px 16px rgba(0, 0, 0, 0.29), 0px 0px 0px rgba(0, 0, 0, 0.3);
     background-color: white;
     padding: 35px;
     border: 0.7px solid #D1D1D1;
     border-radius: 20px;
-    max-width: 250px;
+    /* max-width: 300px; */
 }
+
 .item-service {
 }
 
@@ -294,11 +329,11 @@ body {
     line-height: 133%;
 }
 .item-service__line {
-    padding-bottom: 10px;
-    
+    border-bottom: 2px solid rgb(0, 0, 0);
 }
 .item-service__text {
     font-weight: 300;
     /* font-size: 20px; */
     line-height: 142%;
+    /* max-height: 120px; */
 }
