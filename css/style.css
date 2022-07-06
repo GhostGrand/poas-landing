@@ -257,13 +257,16 @@ body {
     transition: ease-in-out 0.3s;
 }
 
-/* @media (min-width:479px) {
+@media (min-width:479px) {
     .main-block__button_border:hover {
-        color: rgb(118, 121, 255);
-        background-color: #404E87;
-            border: 0.7px solid #404E87;
+        /* color: rgb(118, 121, 255); */
+        text-align: center;
+        background-color: #fcfcfc2d;
+        /* border: 0.7px solid #404E87; */
+        /* padding-right: 60px; */
+        
     }
-} */
+}
 
 .main-block__image {
     position: absolute;
