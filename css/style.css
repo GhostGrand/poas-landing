@@ -34,6 +34,7 @@ h6 {
 
 html,
 body {
+    background: #fafafa;
     height: 100%;
     line-height: 1;
     font-size: 16px;
@@ -160,13 +161,38 @@ body {
     z-index: 2;
     margin: -110px 0px 0px 0px;
 }
+
+.page__about {
+}
+
+/* -------HEADER-BLOCK------------общий_стиль_для_блоков------------------------------------------------------ */
+
+.header-block {
+    text-align: center;
+    letter-spacing: 0,2px;
+}
+.header-block__title {
+    font-weight: 700;
+    line-height: 140%;
+    font-size: 40px;
+}
+.header-block__title:not(:last-child) {
+    margin: 0px 0px 5px 0px;
+}
+
+.header-block__sub-title {
+    font-weight: 300;
+    line-height: 140%;
+    color: #737373;
+    font-size: ;
+}
+
 /* -------FOOTER------------------------------------------------------------------- */
 .footer {
 
 }
 
 /* -------MAIN-BLOCK--------------------------------------------------------------------- */
-
 .main-block {
     position: relative;
 }
@@ -281,7 +307,6 @@ body {
 } 
 
 /* ----SERVICES-------------------------------- */
-
 .services {
 }
 .services__container {
@@ -363,3 +388,55 @@ body {
     line-height: 142%;
     /* max-height: 120px; */
 }
+
+/* -------ABOUT_BLOCK------------------------------------------------------------------- */
+.about {
+    padding: 80px 0;
+}
+.about__container {
+}
+
+.about__header {
+    margin:  0px 0px 50px 0px;
+}
+
+.about__body {
+    display: flex;
+    margin: 0px -15px;
+}
+.about_column {
+    padding:  0px 15px;
+    flex: 0 1 50%;
+}
+.about__item {
+    background-color: #404E87;
+    padding: 15px;
+}
+.about_title {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 150%;
+}
+.about__name_title {
+    font-size: 26px;
+    font-weight: 700px;
+    line-height: 123%;
+
+}
+.about__text {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 123%;
+}
+
+.about-block__image {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 700px;
+    left: 0;
+}
+
+.about-block__image img {
+    object-position: bottom;
+} 
