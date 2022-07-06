@@ -279,13 +279,11 @@ body {
 }
 
 .services__body {
-    
+    display: flex;
 }
 
 @media (min-width: 720px) {
     .services__body{
-    display: flex;
-    flex-wrap: wrap;
     margin: 0px -15px -30px;
     }
 }
@@ -294,12 +292,13 @@ body {
 .services_column {
     padding: 0px 15px;
     flex: 0 1 33.333%;
+    padding: 0px 15px; 
     margin: 0px 0px 30px 0px;
 }
 
 @media (min-width: 720px) {
     .services__body {
-        padding: 0px 15px;
+        
     }
 }
 
@@ -307,6 +306,7 @@ body {
     .services_column {
        flex: 0 1 50%; 
     }
+}
 .services_item {
     height: 100%;
     box-shadow: 0px 180px 50px rgba(0, 0, 0, 0.01), 0px 115px 46px rgba(0, 0, 0, 0.04), 0px 65px 39px rgba(0, 0, 0, 0.15), 0px 29px 29px rgba(0, 0, 0, 0.26), 0px 7px 16px rgba(0, 0, 0, 0.29), 0px 0px 0px rgba(0, 0, 0, 0.3);
