@@ -168,10 +168,13 @@ body {
 /* -------HEADER-BLOCK------------общий_стиль_для_блоков------------------------------------------------------ */
 
 .header-block {
+    z-index: 2;
+    position: relative;
     text-align: center;
     letter-spacing: 0,2px;
 }
 .header-block__title {
+    /* color: white; */
     font-weight: 700;
     line-height: 140%;
     font-size: 40px;
@@ -183,7 +186,7 @@ body {
 .header-block__sub-title {
     font-weight: 300;
     line-height: 140%;
-    color: #737373;
+    color: #929292;
     font-size: ;
 }
 
@@ -353,7 +356,7 @@ body {
 .services_item {
     height: 100%;
     /* max-width: 300px; */
-    box-shadow: 0px 180px 50px rgba(0, 0, 0, 0.01), 0px 115px 46px rgba(0, 0, 0, 0.04), 0px 65px 39px rgba(0, 0, 0, 0.15), 0px 29px 29px rgba(0, 0, 0, 0.26), 0px 7px 16px rgba(0, 0, 0, 0.29), 0px 0px 0px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 0px 180px 50px rgba(0, 0, 0, 0.01), 0px 115px 46px rgba(0, 0, 0, 0.04), 0px 65px 39px rgba(0, 0, 0, 0.15), 0px 29px 29px rgba(0, 0, 0, 0.26), 0px 7px 16px rgba(0, 0, 0, 0.29), 0px 0px 0px rgba(0, 0, 0, 0.3); */
     background-color: white;
     padding: 35px;
     border: 0.7px solid #D1D1D1;
@@ -391,6 +394,7 @@ body {
 
 /* -------ABOUT_BLOCK------------------------------------------------------------------- */
 .about {
+    position: relative;
     padding: 80px 0;
 }
 .about__container {
@@ -403,14 +407,31 @@ body {
 .about__body {
     display: flex;
     margin: 0px -15px;
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    border: 0.7px solid #D1D1D1;
+    box-shadow: 0px 180px 50px rgba(0, 0, 0, 0.01), 0px 115px 46px rgba(0, 0, 0, 0.04), 0px 65px 39px rgba(0, 0, 0, 0.15), 0px 29px 29px rgba(0, 0, 0, 0.26), 0px 7px 16px rgba(0, 0, 0, 0.29), 0px 0px 0px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    position: relative;
+}
+
+@media (min-width: 700px) {
+    .about__body{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px -15px;
+    }
 }
 .about_column {
-    padding:  0px 15px;
+    /* padding:  0px 15px; */
     flex: 0 1 50%;
+    /* flex: 0 1 33.333%; */
+    margin: 0px 0px 30px 0px;
 }
 .about__item {
-    background-color: #404E87;
-    padding: 15px;
+    /* background-color: #404E87; */
+    padding: 10px;
 }
 .about_title {
     font-size: 30px;
@@ -418,7 +439,7 @@ body {
     line-height: 150%;
 }
 .about__name_title {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 700px;
     line-height: 123%;
 
@@ -433,8 +454,9 @@ body {
     position:absolute;
     width: 100%;
     height: 100%;
-    top: 700px;
-    left: 0;
+    top: 0px;
+    left: 0px;
+    /* margin-top: -10%; */
 }
 
 .about-block__image img {
