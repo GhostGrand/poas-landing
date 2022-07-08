@@ -18,12 +18,12 @@
                     <i><b>VSTU </b></i> POAS
                 </a>
                 <nav class="header__menu menu">
-                    <ul class="menu__list">
+                    <ul id="menu" class="menu__list">
                         <li class="menu__item">
                             <a href="" class="menu__link">Главная</a>
                         </li>
                         <li class="menu__item">
-                            <a href="" class="menu__link">Информация</a>
+                            <a href="#services" class="menu__link">Информация</a>
                         </li>
                         <li class="menu__item">
                             <a href="" class="menu__link">Больше</a>
@@ -39,8 +39,8 @@
                         <h1 class="main-block__title">Кафедра ПОАС университета ВолгГТУ</h1>
                         <div class="main-block__text">Лучшее место для учебы!</div>
                         <div class="main-block__buttons">
-                            <a href="" class="main-block__button main-block__button_blue">Партнеры</a>
-                            <a href="" class="main-block__button main-block__button_border">Зав. кафедры</a>
+                            <a href="partners" class="main-block__button main-block__button_blue">Партнеры</a>
+                            <a href="#cafedra" class="main-block__button main-block__button_border">Зав. кафедры</a>
                         </div>
                     </div>
                 </div>
@@ -48,7 +48,7 @@
                     <img src="./images/bg1.jpg" alt="cover">
                 </div>
             </div>
-            <section class="page__services services">
+            <section id="services" class="page__services services">
                 <div class="services__container  _container">
                     <div class="services__body">
                         <div class="services_column">
@@ -123,22 +123,27 @@
                     <img src="./images/bg2.jpg" alt="cover_2">
                 </div>
             </selection>
-            <selection class="page__cafedra cafedra">
+            <selection id="cafedra" class="page__cafedra cafedra">
                 <div class="cafedra__container _container">
                     <div class="about__header header-block">
-                        <h2 class="header-block__title">Наш зав. кафедры</h2>
+                        <h2 class="header-block__title">Заведующий кафедрой</h2>
                         <div class="header-block__sub-title">Преподаватели университета</div>
                     </div>
                     <div class="cafedra__body">
                         <div class="cafedra__column">
-                            <img src="./images/cafedra.png" alt="cafedra">
+                            <div class="cafedra__img">
+                                <img src="./images/cafedra.png" alt="cafedra">
+                            </div>
                         </div>
                         <div class="cafedra__column">
                             <div class="cafedra_item">
                                 <div class="cafedra__name">Орлова Юлия Александровна</div>
-                                <div class="cafedra__work">Зав. кафедры ПОАС</div>
+                                <div class="cafedra__work">Заведующий кафедрой ПОАС</div>
                                 <div class="cafedra__text">Доктор технических наук (системный анализ,
-                                    методы анализа нечеткой информации, основы трансляции), заведующий кафедрой ПОАС</div>
+                                    методы анализа нечеткой информации, основы трансляции), Член-корреспондент Академии
+                                     менеджмента образования и культуры, член Российской Ассоциации Нечетких систем
+                                      и мягких вычислений, Российской ассоциации искусственного интеллекта, руководитель
+                                       грантов Президента РФ, РНФ, РФФИ и др., заведующий кафедрой ПОАС</div>
                             </div>
                         </div>
                     </div>
@@ -147,6 +152,5 @@
         </main>
         <footer class="footer">Это подвал</footer>
     </div>
-    <script src="js/script.js"></script>
 </body>
 </html>

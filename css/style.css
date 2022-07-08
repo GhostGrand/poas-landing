@@ -488,9 +488,17 @@ body {
 }
 
 .cafedra__body {
+    /* display: flex;
+    flex-wrap: wrap;
+    margin: 0px -15px; */
+}
+
+@media (min-width: 700px) {
+    .cafedra__body{
     display: flex;
     flex-wrap: wrap;
     margin: 0px -15px;
+    }
 }
 
 
@@ -499,12 +507,33 @@ body {
     /* flex: 0 1 33.333%; */
     margin: 0px 0px 40px 0px;
 }
+
+@media (max-width: 1000px) {
+    
+    .cafedra_column:not(:last-child) {
+        margin: 0px 0px 30px 0px;
+    }
+
+    .cafedra_column:last-child {
+        flex: 1 1 100%;
+    }
+}
 .cafedra_item {
-    /* padding: 100px 0px; */
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .cafedra__item{
+    text-align:left;
+    }
 }
 
 .cafedra__item > *:not(:last-child) {
     margin: 0px 0px 10px 0px;
+}
+
+.cafedra__img {
+    text-align: center;
 }
 
 .cafedra__name {
@@ -524,3 +553,4 @@ body {
     font-size: 18px;
     line-height: 150%;
 }
+
