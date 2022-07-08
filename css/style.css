@@ -165,6 +165,9 @@ body {
 .page__about {
 }
 
+.page__cafedra {
+}
+
 /* -------HEADER-BLOCK------------общий_стиль_для_блоков------------------------------------------------------ */
 
 .header-block {
@@ -172,11 +175,12 @@ body {
     position: relative;
     text-align: center;
     letter-spacing: 0,2px;
+    padding: 30px;
 }
 .header-block__title {
     /* color: white; */
     font-weight: 700;
-    line-height: 140%;
+    line-height: 150%;
     font-size: 40px;
 }
 .header-block__title:not(:last-child) {
@@ -377,6 +381,9 @@ body {
 .item-service > *:not(:last-child) {
     margin: 0px 0px 10px 0px;
 }
+
+
+
 .item-service_title {
     font-weight: 700;
     font-size: 24px;
@@ -398,6 +405,7 @@ body {
     padding: 80px 0;
 }
 .about__container {
+    padding: 30px;
 }
 
 .about__header {
@@ -433,12 +441,18 @@ body {
     /* background-color: #404E87; */
     padding: 10px;
 }
+
+.about__item > *:not(:last-child) {
+    margin: 0px 0px 10px 0px;
+}
 .about_title {
     font-size: 30px;
     font-weight: 300;
     line-height: 150%;
 }
 .about__name_title {
+    padding-bottom: 5px;
+    padding: 5px 0px;
     font-size: 24px;
     font-weight: 700px;
     line-height: 123%;
@@ -456,9 +470,57 @@ body {
     height: 100%;
     top: 0px;
     left: 0px;
-    /* margin-top: -10%; */
+    margin-top: -8%;
 }
 
 .about-block__image img {
     object-position: bottom;
 } 
+
+
+/* -------CAFEDRA_BLOCK------------------------------------------------------------------- */
+
+
+.cafedra {
+}
+.cafedra__container {
+    padding: 30px;
+}
+
+.cafedra__body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -15px;
+}
+
+
+.cafedra__column {
+    flex: 0 1 50%;
+    /* flex: 0 1 33.333%; */
+    margin: 0px 0px 40px 0px;
+}
+.cafedra_item {
+    /* padding: 100px 0px; */
+}
+
+.cafedra__item > *:not(:last-child) {
+    margin: 0px 0px 10px 0px;
+}
+
+.cafedra__name {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 150%;
+}
+.cafedra__work {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+
+}
+.cafedra__text {
+    padding-top: 5px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+}
