@@ -98,6 +98,19 @@ body {
     color: white;
 }
 
+@media (max-width: 700px) {
+    .header__logo{
+    font-size: 120%;
+    }
+}
+
+@media (max-width: 500px) {
+    .header__logo img {
+    visibility: hidden;
+    margin-left: -43px;
+    }
+}
+
 .header__menu {
     margin: 0px 0px 0px 120px;
 }
@@ -416,7 +429,7 @@ body {
 }
 
 .about__body {
-    display: flex;
+    display: wrap;
     margin: 0px -15px;
     background: white;
     padding: 35px;
