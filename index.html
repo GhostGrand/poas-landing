@@ -14,7 +14,7 @@
         <header class="header">
             <div class="header__container _container">
                 <a href="" class="header__logo">
-                    <img src="./images/volggtu_log.svg" alt="">
+                    <img src="./images/volggtu_log.svg" alt="logo-icon">
                     <i><b>VSTU </b></i> POAS
                 </a>
                 <nav class="header__menu menu">
@@ -26,7 +26,7 @@
                             <a href="#services" class="menu__link">Информация</a>
                         </li>
                         <li class="menu__item">
-                            <a href="" class="menu__link">Больше</a>
+                            <a href="#footer" class="menu__link">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -38,8 +38,8 @@
                     <div class="main-block__body">
                         <h1 class="main-block__title">Кафедра ПОАС университета ВолгГТУ</h1>
                         <div class="main-block__text">Лучшее место для учебы!</div>
-                        <div class="main-block__buttons">
-                            <a href="partners" class="main-block__button main-block__button_blue">Партнеры</a>
+                        <div id="buttons" class="main-block__buttons">
+                            <a href="#partners" class="main-block__button main-block__button_blue">Партнеры</a>
                             <a href="#cafedra" class="main-block__button main-block__button_border">Зав. кафедры</a>
                         </div>
                     </div>
@@ -151,6 +151,10 @@
             </selection>
             <selection id="partners" class="page__partners">
                 <div class="partners__container _container">
+                    <div class="about__header header-block">
+                        <h2 class="header-block__title">Наши партнеры</h2>
+                        <div class="header-block__sub-title">IT-компании, предприятия и многие другие</div>
+                    </div>
                     <section class="carousel" aria-label="Gallery">
                         <ol class="carousel__viewport">
                           <li id="carousel__slide1"
@@ -215,7 +219,7 @@
                 </div>
             </selection>
         </main>
-        <footer class="footer">
+        <footer id="footer" class="footer">
             <div class="footer__top">
                 <div class="footer__main _container">
                     <div class="footer__row">
@@ -224,13 +228,13 @@
                             <nav class="footer__menu menu-footer">
                                 <ul class="menu-footer__list">
                                     <li class="menu-footer__item">
-                                        <a href="" class="menu-footer__link">
+                                        <a href="https://vk.com/vstu_poas" class="menu-footer__link">
                                             <img src="./images/footer/vk.svg" alt="vk">
                                         </a>
-                                        <a href="" class="menu-footer__link">
+                                        <a href="https://www.youtube.com/channel/UCSlf0uRzy38TWJn78n_7gPg" class="menu-footer__link">
                                             <img src="./images/footer/yt.svg" alt="youtube">
                                         </a>
-                                        <a href="" class="menu-footer__link">
+                                        <a href="https://ru.wikipedia.org/wiki/Волгоградский_государственный_технический_университет" class="menu-footer__link">
                                             <img src="./images/footer/wiki.svg" alt="wiki">
                                         </a>
                                     </li>
@@ -250,20 +254,20 @@
                         </div>
 
                         <div class="footer__column">
-                            <div class="footer__thx">Благодарность за предоставленные картинок сервису Freepik</div>
+                            <div class="footer__thx">Благодарность за предоставленные картинки сервису Iconify</div>
                             <div class="footer__copy">Данный сайт был разработан студентом группы ПрИн-267 Грошевым С. Г.
                                 в рамках учебной практики на кафедре ПОАС ВолгГТУ в 2022 году</div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="footer_bottom">
+            <!-- <div class="footer_bottom">
                 <div class="footer__main _container">
                     <div class="footer__copy">Данный сайт был разработан студентом группы ПрИн-267 Грошевым С. Г.
                         в рамках учебной практики на кафедре ПОАС ВолгГТУ в 2022 году</div>
                 </div>
                 <div class="footer__thx">Благодарность за предоставленные картинок сервису Freepik</div>
-            </div>
+             </div> --! -->
         </footer>
     </div>
     <script src="./js/jquery.js"></script>
