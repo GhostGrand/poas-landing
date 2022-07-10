@@ -545,20 +545,27 @@ body {
 }
 .cafedra_item {
     text-align: center;
+    
 }
 
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
     .cafedra__item{
-    text-align:left;
+    text-align:center;
     }
-}
+} */
 
 .cafedra__item > *:not(:last-child) {
     margin: 0px 0px 10px 0px;
 }
 
 .cafedra__img {
+    /* text-align: center; */
+}
+
+@media (max-width: 700px) {
+    .cafedra__img{
     text-align: center;
+    }
 }
 
 .cafedra__name {
