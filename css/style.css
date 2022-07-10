@@ -196,6 +196,15 @@ body {
     line-height: 150%;
     font-size: 40px;
 }
+
+@media (max-width: 700px) {
+    .header-block__title{
+    text-align: center;
+    line-height: 120%;
+    font-size: 35px;
+    }
+}
+
 .header-block__title:not(:last-child) {
     margin: 0px 0px 5px 0px;
 }
