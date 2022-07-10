@@ -929,3 +929,14 @@ body {
     font-size: 16px;
     line-height: 150%;
 }
+
+.partners__image{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .partners__image img {
+    width: 100%;
+  }
